@@ -1,0 +1,154 @@
+*{
+    margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: futura-pt, Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5; 
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li {
+  margin: 0 15px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #000;
+}
+header {
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 20px;
+}
+
+section {
+  
+    padding: 20px;
+    
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #0073e6;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+.newsletter-section input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.newsletter-section button {
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.language-section {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li a {
+    font-size: 0.9em;
+    color: #555;
+}
+@media screen and (max-width: 480px) {
+    /* Smaller font sizes */
+    body {
+        font-size: 0.9rem;
+    }
+
+    /* Navbar adjustments */
+    .navbar {
+        padding: 10px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    /* Social icons resize */
+    .social-links img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Newsletter form full width */
+    .newsletter-section input[type="email"],
+    .newsletter-section button {
+        width: 100%;
+        margin: 5px 0;
+        padding: 10px;
+    }
+    
+    /* Footer links stacking */
+    footer ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

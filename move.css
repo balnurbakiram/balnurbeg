@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: futura-pt, Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 10px;
+}
+/* Body styling */
+body {
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-nav .logo {
+    width: 40px;
+    margin-right: 20px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.top-nav .try-free {
+    color: #0055ff;
+    margin-left: auto;
+}
+
+.top-nav .login {
+    color: #333;
+    margin-left: 20px;
+}
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li {
+  margin: 0 15px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #000;
+}
+.slider {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease;
+}
+
+/* Slide styling */
+.slide {
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.slide h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.slide p {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+/* Slide controls using radio buttons */
+#slide1:checked ~ .slides {
+  transform: translateX(0%);
+}
+
+#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+/* Navigation dots */
+.nav {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.nav label {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #333;
+}
+.abl-animated-headline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    font-weight: bold;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html, input, select, textarea {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* Medium screens (tablets, landscape phones) */
+@media (max-width: 992px) {
+  .slider {
+    width: 100%;
+    height: 250px;
+  }
+
+  .slide h2 {
+    font-size: 20px;
+  }
+
+  .top-nav a {
+    font-size: 12px;
+    margin: 0 8px;
+  }
+
+  .menu ul li {
+    margin: 0 10px;
+  }
+}
+
+/* Small screens (portrait phones) */
+@media (max-width: 576px) {
+  .top-nav {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .menu-icon {
+    font-size: 20px;
+  }
+
+  .slider {
+    width: 90%;
+    height: 200px;
+  }
+
+  .slide h2 {
+    font-size: 18px;
+  }
+
+  .top-nav a {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+}
+
+/* Extra-small screens (<400px) */
+@media (max-width: 400px) {
+  .slider {
+    height: 180px;
+  }
+
+  .slide h2 {
+    font-size: 16px;
+  }
+
+  .top-nav a {
+    font-size: 12px;
+  }
+
+  .menu ul {
+    gap: 5px;
+  }
+}
